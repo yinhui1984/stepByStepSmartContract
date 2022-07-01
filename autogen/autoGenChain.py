@@ -103,7 +103,7 @@ def init_chain():
 def create_run_script(account):
     #  do not add   --http.corsdomain '*'  , it's not safe for private chain
     cmd = '''
-    geth --datadir {} --networkid {} --port 30310  --http --http.api 'admin,eth,miner,net,txpool,personal,web3'  --mine --allow-insecure-unlock --unlock '{}' --password password.txt
+    geth --datadir {} --networkid {} --port 8545  --http --http.api 'admin,eth,miner,net,txpool,personal,web3'  --mine --allow-insecure-unlock --unlock '{}' --password password.txt
     '''.format(DATA_FOLDER, CHAIN_ID, account)
     with open("run.sh", "w+") as f:
         f.write(cmd)
