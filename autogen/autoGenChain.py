@@ -75,8 +75,6 @@ def create_genesis(coinbase):
     "extraData": "0x00",
     "gasLimit": "0x8000000",
     "difficulty": "0x0400",
-    "byzantiumBlock": 0,
-    "constantinopleBlock": 0,
     "mixhash": "0x0000000000000000000000000000000000000000000000000000000000000000",
     "coinbase": "{}",
     "alloc": {{
@@ -85,6 +83,8 @@ def create_genesis(coinbase):
     "config": {{
         "chainId": {},
         "homesteadBlock": 0,
+        "byzantiumBlock": 0,
+        "constantinopleBlock": 0,
         "eip150Block": 0,
         "eip155Block": 0,
         "eip158Block": 0
